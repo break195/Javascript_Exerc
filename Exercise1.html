@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Exercise 1</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+let i = 1;
+while (i <= 100) {
+	if( i % 5 === 0 && i % 3 === 0) {
+    	text1 = "Visual Nuts";
+    } else {
+      if (i % 3 === 0) { 
+      	text1 = "Visual"; 
+      } else {
+          if( i % 5 === 0) {
+          	text1 = "Nuts";
+          } else {
+        	 text1 = i;
+          }
+      }
+   	}
+    text += "<br>" + text1;
+  	i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
